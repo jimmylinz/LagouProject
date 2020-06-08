@@ -1,0 +1,20 @@
+Dog1:
+  name: 小白
+  color: 白
+  age: 2
+  gender: 公
+  hair: 长毛
+
+Dog2:
+  name: 旺财
+  color: 银色
+  age: 1
+  gender: 母
+  hair: 长毛
+
+Dog3:
+  name: 小菊花
+  color: 黄色
+  age: 1
+  gender: 母
+  hair: 长毛

@@ -1,0 +1,20 @@
+Cat1:
+  name: 小黄
+  color: 黄
+  age: 2
+  gender: 公
+  hair: 短毛
+
+Cat2:
+  name: 喵咪
+  color: 黑
+  age: 1
+  gender: 母
+  hair: 短毛
+
+Cat3:
+  name: 嘿嘿
+  color: 黑白
+  age: 1
+  gender: 母
+  hair: 短毛
