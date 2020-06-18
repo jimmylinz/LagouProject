@@ -1,6 +1,6 @@
 import pytest
 
-from pythoncode.pytest实战一作业.cal_hw import Calculator
+from pythoncode.pytest_work1.cal_hw import Calculator
 
 
 @pytest.fixture(scope='session')
