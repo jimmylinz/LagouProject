@@ -4,6 +4,7 @@ from selenium.webdriver.chrome.options import Options
 
 class TestLogin:
 
+
     def test_login_debug(self):
         #实例化option
         option = Options()
