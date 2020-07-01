@@ -1,0 +1,5 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"skipped","Fri Jun 12 00:27:22 CST 2020","Fri Jun 12 00:27:22 CST 2020","0","","test_alluredemo1","","","","test_skip","this test is skipped"
+"failed","Fri Jun 12 00:27:21 CST 2020","Fri Jun 12 00:27:21 CST 2020","0","","test_alluredemo1","","","","test_failure","this test fails"
+"passed","Fri Jun 12 00:27:21 CST 2020","Fri Jun 12 00:27:21 CST 2020","0","","test_alluredemo1","","","","test_success","this test succeeds"
+"broken","Fri Jun 12 00:27:22 CST 2020","Fri Jun 12 00:27:22 CST 2020","0","","test_alluredemo1","","","","test_broken",""

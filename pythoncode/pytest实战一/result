@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite errors="0" failures="1" hostname="DESKTOP-UGIE581" name="pytest" skipped="0" tests="8" time="0.083" timestamp="2020-06-15T22:33:08.541942"><testcase classname="test_cal.TestCal" file="test_cal.py" line="11" name="test_add" time="0.001"></testcase><testcase classname="test_cal.TestCal" file="test_cal.py" line="16" name="test_sub" time="0.000"></testcase><testcase classname="test_cal.TestCal" file="test_cal.py" line="21" name="test_mul" time="0.001"></testcase><testcase classname="test_cal.TestCal" file="test_cal.py" line="26" name="test_mul1" time="0.000"><failure message="assert 60 == 63
+ +  where 63 = &lt;bound method Calculator.mul of &lt;pythoncode.pytest实战一.cal.Calculator object at 0x000001E67E08D460&gt;&gt;(7, 9)
+ +    where &lt;bound method Calculator.mul of &lt;pythoncode.pytest实战一.cal.Calculator object at 0x000001E67E08D460&gt;&gt; = &lt;pythoncode.pytest实战一.cal.Calculator object at 0x000001E67E08D460&gt;.mul">self = &lt;pythoncode.pytest实战一.test_cal.TestCal object at 0x000001E67E06D130&gt;
+
+    @pytest.mark.mul
+    def test_mul1(self):
+        cal = Calculator()
+&gt;       assert 60 == cal.mul(7,9)
+E       assert 60 == 63
+E        +  where 63 = &lt;bound method Calculator.mul of &lt;pythoncode.pytest实战一.cal.Calculator object at 0x000001E67E08D460&gt;&gt;(7, 9)
+E        +    where &lt;bound method Calculator.mul of &lt;pythoncode.pytest实战一.cal.Calculator object at 0x000001E67E08D460&gt;&gt; = &lt;pythoncode.pytest实战一.cal.Calculator object at 0x000001E67E08D460&gt;.mul
+
+test_cal.py:30: AssertionError</failure></testcase><testcase classname="test_cal.TestCal" file="test_cal.py" line="31" name="test_div" time="0.000"></testcase><testcase classname="test_fixture.TestLgin" file="test_fixture.py" line="19" name="test_case1" time="0.001"></testcase><testcase classname="test_fixture.TestLgin" file="test_fixture.py" line="23" name="test_case2" time="0.000"></testcase><testcase classname="test_fixture.TestLgin" file="test_fixture.py" line="27" name="test_case3" time="0.002"></testcase></testsuite></testsuites>
