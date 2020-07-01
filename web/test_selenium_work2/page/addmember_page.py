@@ -11,6 +11,7 @@ def getdata():
 
 @pytest.mark.parametrize(("usr","act","phone"),getdata())
 '''
+
 class AddMember(BasePage):
 
     _username = "username"#用户名输入框

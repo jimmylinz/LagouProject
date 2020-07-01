@@ -5,7 +5,6 @@ from selenium.webdriver.common.by import By
 from web.test_selenium_work2.page.base_page import BasePage
 from web.test_selenium_work2.page.contact_page import Contact
 
-
 class ImportContactPage(BasePage):
     _input = '//*[@id="js_upload_file_input"]'#上传按钮
     _filename = "upload_file_name"#上传的文件名
