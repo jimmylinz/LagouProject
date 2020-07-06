@@ -4,6 +4,8 @@ import pytest
 import yaml
 from appium import webdriver
 from appium.webdriver.common.mobileby import MobileBy
+from selenium.webdriver.support.wait import WebDriverWait
+
 
 def getdata():
     with open ("member.yml",encoding="UTF-8") as f:
@@ -61,6 +63,7 @@ class TestTouchAcion:
             self.driver.find_element(MobileBy.XPATH, "//*[@text='确定']").click()
             eles = self.driver.find_elements(MobileBy.XPATH,
                                              "//*[@resource-id='com.tencent.wework:id/hfg']/..//*[@class='android.widget.TextView']")
+            WebDriverWait(self.driver, 15).until_not(lambda x: x.find_element_by_xpath(f"//*[@text='{user}']"))
             del_list = [ele.get_attribute("text") for ele in eles]
             assert user not in del_list
             print("删除成功")
