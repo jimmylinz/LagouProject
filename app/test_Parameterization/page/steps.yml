@@ -1,0 +1,17 @@
+- by: id
+  locator: name
+  action: click
+
+- by: id
+  locator: name2
+  action: click
+
+- by: id
+  locator: name2
+  action: send
+  value: "{value}"
+
+- by: id
+  locator: name2
+  action: send
+  value: "{value2}"
