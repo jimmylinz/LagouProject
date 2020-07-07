@@ -1,0 +1,11 @@
+add:
+  - ['hogwarts001','男','13100000001']
+  - ['hogwarts002','女','13100000002']
+  - ['hogwarts003','男','13100000003']
+
+delete:
+  - 'hogwarts001'
+  - 'hogwarts002'
+  - 'hogwarts003'
+
+
