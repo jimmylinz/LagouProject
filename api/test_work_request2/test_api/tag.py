@@ -1,5 +1,5 @@
 
-from api.test_work_request2.test_api.baseapi import BaseApi
+from test_work_request2.test_api.baseapi import BaseApi
 
 
 class Tag(BaseApi):
@@ -14,7 +14,7 @@ class Tag(BaseApi):
                 "tagid": tagid
             }
         }
-        re = self.send_tag(date)
+        re = self.send_api(date)
         return re
 
 #更新标签名字
@@ -27,7 +27,7 @@ class Tag(BaseApi):
                 "tagid": tagid
             }
         }
-        re = self.send_tag(date)
+        re = self.send_api(date)
         return re
 
 #删除标签
@@ -39,7 +39,7 @@ class Tag(BaseApi):
                 "tagid": tagid
             }
         }
-        re = self.send_tag(date)
+        re = self.send_api(date)
         return re
 
 #获取标签成员
@@ -51,7 +51,14 @@ class Tag(BaseApi):
                 "tagid": tagid
             }
         }
-        re = self.send_tag(date)
+        re = self.send_api(date)
         return re
 
-
+#获取标签成员列表
+    def tag_get_taglist(self,token):
+        date = {
+            "method": "get",
+            "url": f"https://qyapi.weixin.qq.com/cgi-bin/tag/list?access_token={token}",
+        }
+        re = self.send_api(date)
+        return re
